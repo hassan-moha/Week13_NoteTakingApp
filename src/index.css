@@ -32,3 +32,31 @@ body {
 .grid > div:nth-child(7) { animation-delay: 0.35s; }
 .grid > div:nth-child(8) { animation-delay: 0.4s; }
 .grid > div:nth-child(9) { animation-delay: 0.45s; }
+
+
+@laye components {
+  .div-container {
+    @apply max-w-md p-6 border-none border-gray-300 rounded-md bg-gray-100
+  }
+}
+
+@layer components {
+  .header-h2 {
+    @apply text-xl font-semibold text-gray-800 mb-2
+  }
+}
+
+@layer components {
+  .input-label{
+     @apply text-gray-700 text-sm font-bold mb-2
+  }
+}
+
+@layer components {
+  .label-input {
+    @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline
+  }
+}
+
+
+
